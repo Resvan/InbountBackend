@@ -7,7 +7,7 @@ const getConfigs = () => {
       logStyle: "dev",
     },
     cors: {
-      origin: ["http://localhost:3001", "http://localhost:3000"],
+      origin: ["http://localhost:3001", "http://localhost:3000","https://inbount-backend.vercel.app"],
       credentials: true,
     },
     server: {

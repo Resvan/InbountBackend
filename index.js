@@ -18,6 +18,9 @@ import { globalErrorHandler } from "./utils/errors/GlobalErrorHandler.js";
 const Configs = getConfigs();
 mongo_service();
 const app = express();
+app.get('/',(req,res)=>{
+  res.send("working fineeeeeeeeee")
+})
 const server = http.createServer(app);
 const PORT = Configs.server.port;
 const __filename = fileURLToPath(import.meta.url);
